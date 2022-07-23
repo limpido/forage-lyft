@@ -22,5 +22,5 @@ class TestOctoprimeTire(unittest.TestCase):
 
     def test_tire_should_not_be_serviced(self):
         wear_array = [0.6, 0.7, 0.8, 0.8]
-        tire = CarriganTire(wear_array)
+        tire = OctoprimeTire(wear_array)
         self.assertFalse(tire.needs_service())
